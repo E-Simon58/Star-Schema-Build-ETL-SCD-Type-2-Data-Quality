@@ -13,13 +13,13 @@
 //Now you can run this script (03_Lab_4_ETL.sql)
 //Run 04_Data_Quality_Checks.sql afterwards
 
-alter warehouse compute_wh
+alter warehouse wh_name
 set auto_suspend = 60
 auto_resume = true;
 
-use database mmis642;
+use database db_name;
 use role ACCOUNTADMIN;
-use schema public;
+use schema schema_name;
 
 //Empty out the tables to ensure no data is loaded in (Full-Reload)
 TRUNCATE TABLE IF EXISTS fact_sales;
