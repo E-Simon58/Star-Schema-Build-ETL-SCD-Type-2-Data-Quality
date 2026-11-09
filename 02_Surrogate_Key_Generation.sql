@@ -1,10 +1,10 @@
-alter warehouse compute_wh
+alter warehouse wh_name
 set auto_suspend = 60
 auto_resume = true;
 
-use database mmis642;
+use database db_name;
 use role ACCOUNTADMIN;
-use schema public;
+use schema schema_name;
 
 //Generate the dim_promotion Surrogate Key Sequence
 CREATE SEQUENCE promotion_sk_seq
