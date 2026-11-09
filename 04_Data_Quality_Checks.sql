@@ -1,10 +1,10 @@
-alter warehouse compute_wh
+alter warehouse wh_name
 set auto_suspend = 60
 auto_resume = true;
 
-use database mmis642;
+use database db_name;
 use role ACCOUNTADMIN;
-use schema public;
+use schema schema_name;
 
 // Row count + Populated table checks per table to be used before/after loading
 SELECT 'dim_customer' AS table_name, COUNT(*) AS row_count
