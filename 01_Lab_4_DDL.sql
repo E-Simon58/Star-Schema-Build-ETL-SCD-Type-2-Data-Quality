@@ -95,7 +95,7 @@ CREATE TABLE fact_sales (                 -- grain: one row per order line item
   margin_amount  DECIMAL(12,2)            -- extended_sales - extended_cost
 );
 
-CREATE TABLE fact_returns (
+CREATE TABLE fact_returns (               --grain: one row per return
     return_sk BIGINT PRIMARY KEY,
     return_id INTEGER,                    --natural / business key
     product_key INTEGER,
